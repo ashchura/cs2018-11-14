@@ -29,6 +29,18 @@ package by.it.stognachov.lesson02;
 
 
 */
+import java.util.Scanner;
 class TaskC3 {
-
+    static double getWeight(int weight){
+        double g=3.86/9.81;
+        double s=weight;
+        s*=g;
+        s=Math.round(s*100)/100.0;
+        return s;
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int d=sc.nextInt();
+        System.out.println(getWeight(d));
+    }
 }
