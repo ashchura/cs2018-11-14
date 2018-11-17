@@ -10,7 +10,18 @@ package by.it.yarmolenka.lesson02;
 Sum = 60
 
 */
+
+import java.util.Scanner;
 class TaskC1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = 0, b = 0;
+        a = sc.nextInt();
+        b = sc.nextInt();
+        int sum = a + b;
+        System.out.print("Sum = ");
+        System.out.println(sum);
+    }
 
 
 
