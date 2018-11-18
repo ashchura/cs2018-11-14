@@ -29,6 +29,19 @@ package by.it.koliada._tasks_.lesson02;
 
 
 */
-class TaskC3 {
 
+import java.util.Scanner;
+
+class TaskC3 {
+    public static void main(String[] args) {
+        Scanner number = new Scanner(System.in);
+        int a = number.nextInt();
+        System.out.format("%.2f", getWeight(a));
+    }
+
+    public static double getWeight(int weight) {
+        double Luna = weight / 9.81 * 3.86;
+        return Luna;
+            }
 }
+
