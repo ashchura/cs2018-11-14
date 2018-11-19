@@ -28,6 +28,19 @@ package by.it.akulov.lesson02;
 29.51
 
 
+Решение:
+double getWeight(int me) {
+    double gm = 3.86;
+    double ge = 9.81;
+    double m = me/ge*gm;
+    int m100 = (int) (m*100);
+    if (m*100 - m100 >= 0.5) {
+        return (m100+1)/100.0;
+    }
+    else
+        return m100/100.0;
+}
+
 */
 
 import java.math.BigDecimal;
