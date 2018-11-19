@@ -21,5 +21,12 @@ Lesson 03. Task A2. Стихотворение
 Для автоматической проверки откройте и запустите класс Testing
 */
 class TaskA2 {
+    public static void main(String[] args) {
+        String a = "Мой дядя самых честных правил,\n";
+        String b = "Когда не в шутку занемог,\n";
+        String c = "Он уважать себя заставил\n";
+        String d = "И лучше выдумать не мог.";
+        System.out.println("Моё любимое стихотворение:\n" + a + b + c + d);
+    }
 
 }

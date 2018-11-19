@@ -44,7 +44,13 @@ class TaskA1 {
         int umn = a * b;
         int cha = a / b;
         int ost = a % b;
-        System.out.println(sum + raz + umn + cha + ost);
+        System.out.println(sum + " " + raz + " " + umn + " " + cha + " " + ost);
+        double dum = a + b;
+        double daz = a - b;
+        double dmn = a * b;
+        double dha = (double) a / b;
+        double dst = a % b;
+        System.out.println(dum + " " + daz + " " + dmn + " " + dha + " " + dst);
     }
 
 }
