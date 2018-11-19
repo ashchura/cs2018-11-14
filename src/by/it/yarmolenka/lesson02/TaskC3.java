@@ -30,5 +30,8 @@ package by.it.yarmolenka.lesson02;
 
 */
 class TaskC3 {
+    public static void main(String[] args) {
+
+    }
 
 }
