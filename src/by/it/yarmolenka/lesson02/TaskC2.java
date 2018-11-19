@@ -18,7 +18,7 @@ import java.util.Scanner;
 class TaskC2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = 0, b = 0;
+        int a , b;
         a = sc.nextInt();
         b = sc.nextInt();
         int c = a + b;
