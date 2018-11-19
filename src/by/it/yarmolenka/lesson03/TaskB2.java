@@ -32,15 +32,16 @@ Lesson 03. Task B2. Нужно написать программу, котора
 
 */
 class TaskB2 {
-    static double dis(int a, int b, int c){
-        double d = b * b - 4 * a * c;
+    private static double dis(double a, double b, double c){
+        double d = 0;
+        d = b * b - 4 * a * c;
         return d;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        double a = sc.nextInt();
+        double b = sc.nextInt();
+        double c = sc.nextInt();
         double d = dis(a, b, c);
         if (d > 0) {
             double x1, x2;
@@ -49,7 +50,7 @@ class TaskB2 {
             System.out.println(x1 + " " + x2);
         }
         if (d == 0) {
-            double x = -b / (2 * a);
+            double x =  -b / (2 * a);
             System.out.println(x);
         }
         if (d < 0)

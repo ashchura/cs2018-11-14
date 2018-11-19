@@ -32,7 +32,7 @@ import java.util.Scanner;
 
 */
 class TaskC3 {
-    static double getWeight(int weight){
+    private static double getWeight(int weight){
         double m = weight * 3.86 / 9.81;
         int m100 = (int) (m * 100);
         if (m * 100 - m100 >= 0.5)
