@@ -20,12 +20,24 @@ package by.it.koliada._tasks_.lesson03;
     5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
 */
 public class TaskC2 {
-
-
+    public static void main(String[] args) {
+        System.out.println(sumDigitsInNumber(5467));
+    }
+        public static int sumDigitsInNumber(int number) {
+        int t = number / 1000;
+        int t2 = number % 1000;
+        int s = t2 / 100;
+        int s2 = t2 % 100;
+        int d = s2 / 10;
+        int e = s2 % 10;
+        int sum = t + s + d + e;
+            return sum;
+                }
+}
 
 
 //    public static void main(String[] args) {
 //        System.out.println(sumDigitsInNumber(5467));
 //    }
 
-}
+

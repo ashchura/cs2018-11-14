@@ -1,9 +1,11 @@
 package by.it.koliada._tasks_.lesson03;
 
+import java.util.Scanner;
+
 /*
 Lesson 03. Task B2. Нужно написать программу, которая вводит три числа  a b c типа int с клавиатуры
 и вычисляет корни квадратного уравнения a*a*x + b*x + c = 0:
-1) Если два корня, то выводится два корня через пробел.
+1) Если два корня,   то выводится два корня через пробел.
 2) Если один корень, то выводится только одно число - корень.
 3) Если нет действительных корней, то выводится сообщение об ошибке "Отрицательный дискриминант"
 
@@ -30,5 +32,21 @@ Lesson 03. Task B2. Нужно написать программу, котора
 
 */
 class TaskB2 {
-
+    public static void main(String[] args) {
+        Scanner number = new Scanner(System.in);
+        int a = number.nextInt();
+        int b = number.nextInt();
+        int c = number.nextInt();
+        int d = b * b - 4 * a * c;
+        if (d > 0) {
+            double x1 = (-b + Math.sqrt(d)) / (2 * a);
+            double x2 = (-b - Math.sqrt(d)) / (2 * a);
+            System.out.println(x1 + " " + x2); }
+        if (d == 0) {
+            double x = -b / (2 * a);
+            System.out.println(x);
+        }
+        if (d < 0) System.out.println("Отрицательный дискриминант");
+    }
 }
+

@@ -51,6 +51,6 @@ class TaskA1 {
         double ed = a*b;
         double fd = (double)a/b;
         double gd = a%b;
-        System.out.print (cd+" "+dd+" "+ed+" "+fd+" "+gd);
+        System.out.println (cd+" "+dd+" "+ed+" "+fd+" "+gd);
             }
 }
