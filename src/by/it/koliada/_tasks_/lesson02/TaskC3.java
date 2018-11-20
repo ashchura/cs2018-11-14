@@ -36,12 +36,16 @@ class TaskC3 {
     public static void main(String[] args) {
         Scanner number = new Scanner(System.in);
         int a = number.nextInt();
-        System.out.format("%.2f", getWeight(a));
+        System.out.println(getWeight(a));
     }
 
     public static double getWeight(int weight) {
         double Luna = weight / 9.81 * 3.86;
-        return Luna;
-            }
+        int b = (int)(Luna*100);
+        if (Luna*100 - b>=0.5)
+            return (b+1)/100.0;
+        else
+            return b/100.0;
+    }
 }
 
