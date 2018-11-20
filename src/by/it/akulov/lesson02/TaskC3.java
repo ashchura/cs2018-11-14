@@ -29,28 +29,42 @@ package by.it.akulov.lesson02;
 
 
 Решение:
+1)
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+static double getWeight(int mass){
+double weight = new BigDecimal(mass * 3.86 / 9.81).setScale(2, RoundingMode.HALF_UP).doubleValue();
+return weight;
+}
+
+2)
 double getWeight(int me) {
-    double gm = 3.86;
-    double ge = 9.81;
-    double m = me/ge*gm;
-    int m100 = (int) (m*100);
-    if (m*100 - m100 >= 0.5) {
-        return (m100+1)/100.0;
-    }
-    else
-        return m100/100.0;
+double gm = 3.86;
+double ge = 9.81;
+double m = me/ge*gm;
+int m100 = (int) (m*100);
+if (m*100 - m100 >= 0.5) {
+return (m100+1)/100.0;
+}
+else
+return m100/100.0;
 }
 
 */
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Scanner;
 
 class TaskC3 {
-    static double getWeight(int mass){
-        double weight = new BigDecimal(mass * 3.86 / 9.81).setScale(2, RoundingMode.HALF_UP).doubleValue();
-        return weight;
+    static double getWeight(int me) {
+        double gm = 3.86;
+        double ge = 9.81;
+        double m = me / ge * gm;
+        int m100 = (int) (m * 100);
+        if (m * 100 - m100 >= 0.5) {
+            return (m100 + 1) / 100.0;
+        } else
+            return m100 / 100.0;
     }
 
     public static void main(String[] args) {
