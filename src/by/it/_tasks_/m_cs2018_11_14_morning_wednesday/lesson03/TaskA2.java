@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson03;
+package by.it._tasks_.m_cs2018_11_14_morning_wednesday.lesson03;
 
 /*
 Lesson 03. Task A2. Стихотворение

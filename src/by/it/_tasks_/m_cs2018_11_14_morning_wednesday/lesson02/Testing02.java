@@ -1,12 +1,19 @@
-package by.it._tasks_.lesson02;
+package by.it._tasks_.m_cs2018_11_14_morning_wednesday.lesson02;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.io.StringWriter;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 @SuppressWarnings("all")
 

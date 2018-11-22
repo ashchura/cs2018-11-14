@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson02;
+package by.it._tasks_.m_cs2018_11_14_morning_wednesday.lesson02;
 
 /* Нужно написать программу, которая вводит два числа с клавиатуры
 и выводит их сумму на экран в виде

@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson02;
+package by.it._tasks_.m_cs2018_11_14_morning_wednesday.lesson02;
 /*
         Уберите комментарии с части кода, чтобы на экран вывелось сообщение «C Новым Годом».
 
