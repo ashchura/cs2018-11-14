@@ -1,5 +1,7 @@
 package by.it._tasks_.m_cs2018_11_14_morning_wednesday.lesson02;
 
+import java.util.Scanner;
+
 /*
 Выводим квадрат числа
 Напишите программу, которая считывает с клавиатуры целое число a и выводит квадрат этого числа (a * a).
@@ -20,4 +22,18 @@ int i=sc.nextInt();
  */
 
 class TaskB1 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()) {
+            int numb = sc.nextInt();
+
+            if (numb == -1) {
+                break;
+            }
+            System.out.println(Math.pow(numb, 2));
+        }
+        sc.close();
+    }
 }

@@ -1,5 +1,8 @@
 package by.it._tasks_.m_cs2018_11_14_morning_wednesday.lesson02;
 
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -31,4 +34,28 @@ package by.it._tasks_.m_cs2018_11_14_morning_wednesday.lesson02;
 */
 class TaskC3 {
 
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()) {
+            int weight = sc.nextInt();
+
+            if (weight == -1) {
+                break;
+            }
+            System.out.println(getWeight(weight));
+        }
+        sc.close();
+    }
+
+    private static Double getWeight(int weight) {
+        final double marsValue = 3.86d;
+        final double earthValue = 9.81d;
+
+        DecimalFormat df = new DecimalFormat("###.##");
+
+        double diff = earthValue / marsValue;
+
+        return Double.parseDouble(df.format(weight / diff));
+    }
 }

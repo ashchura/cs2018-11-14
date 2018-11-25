@@ -7,9 +7,10 @@ package by.it._tasks_.m_cs2018_11_14_morning_wednesday.lesson02;
 
 class TaskA3 {
     public static void main(String[] args) {
-        int i = 2;
-        int j = 3;
-        int k = i + j;
-        System.out.println(i + "+" + j + "=" + k);
+        final int powerOfTwo = 2;
+        int i = 3;
+        int j = 4;
+        int k = (int) Math.pow(i, powerOfTwo) + (int) Math.pow(4, powerOfTwo);
+        System.out.println(i + "*" + i + "+" + j + "*" + j + "=" + k);
     }
 }
