@@ -22,6 +22,39 @@ package by.it.shchura.lesson04;
  */
 
 
+import java.util.Scanner;
+
 public class TaskA3 {
 
+    public static void main(String[] args) {
+
+        int[] arr = new int[3];
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 3 && sc.hasNext(); i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int matchingCount = 0;
+        int iIndex = 0;
+        int jIndex = 0;
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = i + 1; j < 3; j++) {
+
+                if (arr[i] == arr[j]) {
+                    matchingCount++;
+                    iIndex = i;
+                    jIndex = j;
+                }
+            }
+            if (matchingCount == 2) {
+                System.out.println(arr[0] + " " + arr[1] + " " + arr[2]);
+            }
+        }
+
+        if (matchingCount == 1) {
+            System.out.println(arr[iIndex] + " " + arr[jIndex]);
+        }
+    }
 }

@@ -10,6 +10,18 @@ package by.it.shchura.lesson05;
 */
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class TaskB1 {
 
+    public static void main(String[] args) {
+
+        List<String> strings = new ArrayList<String>(Arrays.asList("ONE", "TWO", "THREE", "FOUR", "FIVE"));
+        System.out.println(strings.size());
+        for (String str : strings) {
+            System.out.println(str);
+        }
+    }
 }

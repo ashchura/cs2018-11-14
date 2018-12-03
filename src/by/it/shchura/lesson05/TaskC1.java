@@ -10,12 +10,37 @@ package by.it.shchura.lesson05;
     Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 */
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
 
+        List<Integer> list = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>();
+        List<Integer> list2 = new ArrayList<>();
+        List<Integer> list3 = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 20 && sc.hasNext(); i++) {
+            list.add(sc.nextInt());
+        }
+
+        for (Integer number : list) {
+            if (number % 3 == 0) {
+                list1.add(number);
+            }
+            if (number % 2 == 0) {
+                list2.add(number);
+            }
+            if (number % 3 != 0 && number % 2 != 0) {
+                list3.add(number);
+            }
+        }
+        printList(list1);
+        printList(list2);
+        printList(list3);
     }
 
     private static void printList(List<Integer> list) {

@@ -22,4 +22,14 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
 
+    public static void main(String[] args) {
+
+        String a = "Я помню чудное мгновенье,\n";
+        String b = "Передо мной явилась ты,\n";
+        String c = "Как мимолётное виденье,\n";
+        String d = "Как гений чистой красоты!";
+
+        System.out.println("Мое любимое стихотворение: \n");
+        System.out.println(a + b + c + d);
+    }
 }

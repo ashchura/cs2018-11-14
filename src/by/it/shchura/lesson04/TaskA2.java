@@ -24,6 +24,66 @@ package by.it.shchura.lesson04;
 
  */
 
+import java.util.Scanner;
+
 public class TaskA2 {
 
+    public static final String MONDAY = "понедельник";
+    public static final int MONDAY_DIGIT = 1;
+
+    public static final String TUESDAY = "вторник";
+    public static final int TUESDAY_DIGIT = 2;
+
+    public static final String WEDNESDAY = "среда";
+    public static final int WEDNESDAY_DIGIT = 3;
+
+    public static final String THURSDAY = "четверг";
+    public static final int THURSDAY_DIGIT = 4;
+
+    public static final String FRIDAY = "пятница";
+    public static final int FRIDAY_DIGIT = 5;
+
+    public static final String SATURDAY = "суббота";
+    public static final int SATURDAY_DIGIT = 6;
+
+    public static final String SUNDAY = "воскресенье";
+    public static final int SUNDAY_DIGIT = 7;
+
+    public static String resolveDay(int number) {
+        switch (number) {
+            case 1:
+                return MONDAY;
+            case 2:
+                return TUESDAY;
+            case 3:
+                return WEDNESDAY;
+            case 4:
+                return THURSDAY;
+            case 5:
+                return FRIDAY;
+            case 6:
+                return SATURDAY;
+            case 7:
+                return SUNDAY;
+            default:
+                return "";
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNextInt()) {
+
+            int number = sc.nextInt();
+            if (number == -1) {
+                break;
+            } else if (number <= 0 || number > 7) {
+                System.out.println("такого дня недели не существует");
+                continue;
+            }
+            System.out.println(resolveDay(number));
+        }
+        sc.close();
+    }
 }

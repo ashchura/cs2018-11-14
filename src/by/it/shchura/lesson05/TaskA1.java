@@ -24,6 +24,20 @@ package by.it.shchura.lesson05;
 */
 
 
-public class TaskA1 {
+import java.util.Scanner;
 
+public class TaskA1 {
+    public static void main(String[] args) {
+
+        int[] arr = new int[10];
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 10 && sc.hasNext(); i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        for (int i = 9; i >= 0; i--) {
+            System.out.println(arr[i]);
+        }
+    }
 }

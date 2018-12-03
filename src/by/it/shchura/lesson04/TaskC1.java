@@ -1,5 +1,7 @@
 package by.it.shchura.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -38,5 +40,41 @@ package by.it.shchura.lesson04;
 */
 public class TaskC1 {
 
+    public static void main(String[] args) {
 
+        Scanner sc = new Scanner(System.in);
+        if (sc.hasNextDouble()) {
+
+            double salary = sc.nextDouble();
+            double salaryWithBonus = salary * 1.5;
+
+            if (salary < 300 || salary > 3000)
+            {
+                System.out.println("Мы вам перезвоним!");
+            }
+
+            for (int i = 0; i < 15; i++) {
+                if (i == 0 || i == 13 || i == 14) {
+                    System.out.println("За месяц " + i + " начислено $" + 0.0d);
+                }
+                else  if (i == 6 || i == 7 || i == 8) {
+                    System.out.print("За " + Months.values()[i-1].toString().toLowerCase() + " начислено $" + salary + "\n");
+                    if (salary == 666) {
+                        break;
+                    }
+                } else {
+                    System.out.print("За " + Months.values()[i-1].toString().toLowerCase() + " начислено $" + salaryWithBonus + "\n");
+                    if (salaryWithBonus == 666) {
+                        break;
+                    }
+                }
+            }
+        }
+        sc.close();
+    }
+}
+
+enum Months {
+
+    ЯНВАРЬ, ФЕВРАЛЬ, МАРТ, АПРЕЛЬ, МАЙ, ИЮНЬ, ИЮЛЬ, АВГУСТ, СЕНТЯБРЬ, ОКТЯБРЬ, НОЯБРЬ, ДЕКАБРЬ;
 }

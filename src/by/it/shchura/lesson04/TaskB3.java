@@ -25,7 +25,29 @@ package by.it.shchura.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
 
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNextInt()) {
+
+            int number = sc.nextInt();
+            if (number == -1) {
+                break;
+            }
+
+            int sum = 0;
+            for (int i = 1; i <= 100; i++) {
+                sum += i;
+
+                if (sum <= number) {
+                    System.out.print(sum + ",");
+                }
+            }
+        }
+        sc.close();
+    }
 }

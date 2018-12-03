@@ -33,6 +33,28 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+import java.util.Scanner;
+
 class TaskA1 {
 
+    public static void main(String[] args) {
+
+        double[] arr = new double[2];
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 2 && sc.hasNext(); i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        double sum = arr[0] + arr[1];
+        double diff = arr[0] - arr[1];
+        double product = arr[0] * arr[1];
+        double quotient = arr[0] / arr[1];
+        double remainder = arr[0] % arr[1];
+
+        System.out.println((int)sum + " " + (int)diff + " " + (int)product + " " + (int)quotient + " " + (int)remainder);
+        System.out.println(sum + " " + diff + " " + product + " " + quotient + " " + remainder);
+
+        sc.close();
+    }
 }

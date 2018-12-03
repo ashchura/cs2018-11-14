@@ -21,11 +21,17 @@ package by.it.shchura.lesson03;
 */
 public class TaskC2 {
 
+    public static void main(String[] args) {
+        System.out.println(sumDigitsInNumber(5467));
+    }
 
+    public static int sumDigitsInNumber(int number) {
 
-
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
+        int first = number / 1000;
+        int second = (number % 1000) / 100;
+        int third = ((number % 1000) - second * 100) / 10;
+        int fourth = ((number % 1000) - second * 100) % 10;
+        return (first + second + third + fourth);
+    }
 
 }

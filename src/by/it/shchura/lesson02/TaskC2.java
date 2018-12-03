@@ -17,10 +17,8 @@ OCT:42+32=74
 */
 class TaskC2 {
 
-    private static int[] arr = new int[2];
-
     public static void main(String[] args) {
-
+        int[] arr = new int[2];
         Scanner sc = new Scanner(System.in);
         int sum = 0;
 
